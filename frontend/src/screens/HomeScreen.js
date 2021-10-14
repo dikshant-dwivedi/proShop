@@ -25,7 +25,7 @@ const HomeScreen = () => {
         </h2>
       ) : error ? (
         <h3>
-          <Message variant='danger' error={error} />
+          <Message variant='danger'>{error}</Message>
         </h3>
       ) : (
         <Row>
