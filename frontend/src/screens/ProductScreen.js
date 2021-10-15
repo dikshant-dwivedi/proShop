@@ -96,7 +96,7 @@ const ProductScreen = ({ history, match }) => {
                   <Button
                     className='btn-block'
                     type='button'
-                    disbaled={product.countInStock === 0}
+                    disabled={product.countInStock === 0}
                     onClick={addToCartHandler}
                   >
                     Add to Cart
