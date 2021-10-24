@@ -6,6 +6,7 @@ import { listProducts } from "../actions/productActions"
 import Message from "../components/Message"
 import Loader from "../components/Loader"
 import Paginate from "../components/Paginate"
+import ProductCarousel from "../components/ProductCarousel"
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword
@@ -31,6 +32,7 @@ const HomeScreen = ({ match }) => {
         </h3>
       ) : (
         <>
+          {!keyword && <ProductCarousel />}
           <Row>
             {products.map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xlg={3}>
