@@ -32,7 +32,7 @@ const ProfileScreen = ({ history, location }) => {
     if (!userInfo) {
       history.push("/login")
     } else {
-      if (!user.name) {
+      if (!user || !user.name || success) {
         dispatch(getUserDetails("profile"))
         dispatch(listMyOrders())
       } else {
@@ -40,7 +40,7 @@ const ProfileScreen = ({ history, location }) => {
         setEmail(user.email)
       }
     }
-  }, [history, userInfo, user, dispatch])
+  }, [history, userInfo, user, success, dispatch])
 
   const submitHandler = (e) => {
     e.preventDefault()
