@@ -86,3 +86,8 @@ npm run data:destroy
 |John Doe|john@example.com|123456|
 |Jane Doe|jane@example.com|123456|
 
+# Acknowledgment
+* Creator of the course: Brad Traversy
+* Github: [@bradtraversy](https://github.com/bradtraversy)
+* Website: [traversy-media](http://traversymedia.com/)
+
