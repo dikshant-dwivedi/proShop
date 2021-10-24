@@ -15,7 +15,7 @@ This is an E-Commerce project based on [Brad Traversy's MERN eCommerce From Scra
 * Mark orders as delivered option
 * Checkout process (shipping, payment method, etc)
 * PayPal / credit card integration
-Database seeder (products & users)
+* Database seeder (products & users)
 
 # Preview
 
